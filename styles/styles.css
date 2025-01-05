@@ -57,10 +57,28 @@ body {
         margin-bottom: .5rem;
 }
 
+/* post-area__header */
 .post-area__header {
         font-size: .8rem;
 }
 
+.header-link-area {
+        display: block;
+}
+
+.header-time-area {
+        display: block;
+}
+
+.time-label {
+        font-size: .6rem;
+}
+
+.bait-label {
+        font-size: .6rem;
+}
+
+/* post-area__body */
 .post-area__body {
         font-size: .7rem;
 }
@@ -83,5 +101,5 @@ body {
 
 .legal {
         text-transform: uppercase;
-        font-size: .75rem;
+        font-size: .6rem;
 }
