@@ -11,7 +11,7 @@ func main() {
         mux := http.NewServeMux()
 
         // probably wrong but works
-        mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("../frontend/assets"))))
+        mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("../frontend/assets/"))))
         mux.Handle("/",  http.FileServer(http.Dir("../frontend")))
 
         srv := &http.Server{
