@@ -7,3 +7,8 @@ this is a learning adventure.
 ## Running the local server.
 to run the site
 `cd ./backend && go run ./main.go`
+
+## TODO
+. CSS styling
+. sqlite3 db
+. authentication/authorisation
