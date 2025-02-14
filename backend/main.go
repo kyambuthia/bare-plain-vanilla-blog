@@ -8,10 +8,11 @@ import (
 )
 
 func main() {
-        fileHandler := http.FileServer(http.Dir("../frontend"))
-
         mux := http.NewServeMux()
-        mux.Handle("/", fileHandler)
+
+        // probably wrong but works
+        mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("../frontend/assets"))))
+        mux.Handle("/",  http.FileServer(http.Dir("../frontend")))
 
         srv := &http.Server{
                 Handler: mux,
