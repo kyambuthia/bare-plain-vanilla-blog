@@ -3,6 +3,11 @@
 	box-sizing: border-box;
 }
 
+:root {
+        --dark_color: black;
+        --txt_color: gray;
+}
+
 html {
 	display: block;
 	font-family: monospace;
@@ -12,14 +17,23 @@ html {
 body {
         display: block;
         background: black;
-        color: gray;
+        font-size: 16px;
+        line-height: 1.4;
+        color: var(--txt_color);
 }
 
 /* header-area */
 .header-area {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px dotted gray;
+        padding: .5rem 0rem;
         display: block;
         align-items: center;
         justify-content: center;
+        background: var(--dark_color);
 }
 
 /* nav-area */
@@ -41,6 +55,7 @@ body {
 
 /* main-area */
 .main-area {
+        padding-top: 6rem;
         display: block;
         margin: 0 auto;
         width: 400px
@@ -57,9 +72,11 @@ body {
         margin-bottom: .5rem;
 }
 
-/* post-area__header */
-.post-area__header {
+/* post-area__header*/
+.post-header {
         font-size: .8rem;
+        text-transform: uppercase;
+        text-decoration: underline;
 }
 
 .header-link-area {
@@ -75,7 +92,8 @@ body {
 }
 
 .bait-label {
-        font-size: .75757575757575rem;
+        font-size: .8rem;
+        text-transform: uppercase;
 }
 
 /* post-area__body */
