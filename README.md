@@ -4,3 +4,6 @@ a simple blog using bare html, vanilla javascript and plain css plus a simple go
 no JS frameworks, no CSS libraries just hardcore HTML.
 this is a learning adventure.
 
+## Running the local server.
+to run the site
+`cd ./backend && go run ./main.go`
