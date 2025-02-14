@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	display: block;
+	font-family: monospace;
+        font-size: 16px;
+}
+
+body {
+        display: block;
+        background: black;
+        color: gray;
+}
+
+/* header-area */
+.header-area {
+        display: block;
+        align-items: center;
+        justify-content: center;
+}
+
+/* nav-area */
+.nav-area {
+        display: block;
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+}
+
+.nav-area__item {
+        display: block;
+}
+
+.nav-link {
+        text-transform: uppercase;
+        font-size: .75rem;
+}
+
+/* main-area */
+.main-area {
+        display: block;
+        margin: 0 auto;
+        width: 400px
+}
+
+.feed_area {
+        display: block;
+        width: 400px;
+}
+
+/* post-area */
+.post-area {
+        display: block;
+        margin-bottom: .5rem;
+}
+
+/* post-area__header */
+.post-area__header {
+        font-size: .8rem;
+}
+
+.header-link-area {
+        display: block;
+}
+
+.header-time-area {
+        display: block;
+}
+
+.time-label {
+        font-size: .6rem;
+}
+
+.bait-label {
+        font-size: .75757575757575rem;
+}
+
+/* post-area__body */
+.post-area__body {
+        font-size: .7rem;
+}
+
+.header__time {
+        font-size: .75rem;
+}
+
+/* footer-area */
+.footer-area {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+}
+
+.footer-link {
+        font-size: .75rem;
+        text-transform: uppercase;
+}
+
+.legal-note {
+        text-transform: uppercase;
+        font-size: .6rem;
+}
