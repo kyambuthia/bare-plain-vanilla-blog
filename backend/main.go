@@ -10,9 +10,11 @@ import (
 func main() {
         mux := http.NewServeMux()
 
-        // probably wrong but works
+		// static file route handler.
         mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("../frontend/assets/"))))
-        mux.Handle("/",  http.FileServer(http.Dir("../frontend")))
+
+        // frontend route handler.
+		mux.Handle("/",  http.FileServer(http.Dir("../frontend")))
 
         srv := &http.Server{
                 Handler: mux,
