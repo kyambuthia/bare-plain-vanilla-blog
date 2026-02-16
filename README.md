@@ -5,7 +5,7 @@ no JS frameworks, no CSS libraries just hardcore HTML.
 this is a learning adventure.
 
 ## Running the local server.
-cd into the backend directory, run ./main.go and open http://127.0.0.1:8080
+cd into the backend directory, run `go run ./main.go` and open http://127.0.0.1:8000
 
 `cd ./backend && go run ./main.go`
 

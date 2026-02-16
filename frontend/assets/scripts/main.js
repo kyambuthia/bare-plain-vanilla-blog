@@ -1,20 +1,17 @@
-class NavComponent extends HTMLElement()
-{
-        constructor()
-        {
-                super();
-        }
+const navLinks = document.querySelectorAll('.nav-link');
+const currentPath = window.location.pathname.replace(/\/$/, '');
 
-        connectedCallback()
-        {
-                console.log("custom element added to the page");
-        }
+for (const link of navLinks) {
+  const url = new URL(link.href, window.location.origin);
+  const linkPath = url.pathname.replace(/\/$/, '');
 
-        disconnectedCallback()
-        {
-                console.log("custom element removed from the page");
-        }
+  if (linkPath === currentPath || (currentPath === '' && linkPath === '/index.html')) {
+    link.classList.add('is-active');
+    link.setAttribute('aria-current', 'page');
+  }
 }
 
-CustomElement.define("nav-component", NavComponent);
-
+const legalNote = document.querySelector('.legal-note');
+if (legalNote) {
+  legalNote.textContent = `a bare plain vanilla blog. ${new Date().getFullYear()}`;
+}
