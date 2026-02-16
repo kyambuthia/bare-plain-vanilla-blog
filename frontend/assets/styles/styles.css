@@ -7,7 +7,8 @@
 {
 	--dark_color: black;
 	--txt_color: #f8f8ff;
-	--content-area-width: 400px;
+	--muted_txt_color: #9ca3af;
+	--content-area-width: min(92vw, 42rem);
 }
 
 html
@@ -24,6 +25,7 @@ body
 	font-size: 18px;
 	line-height: 1.4;
 	color: var(--txt_color);
+	padding-bottom: 2rem;
 }
 
 /* header-area */
@@ -44,8 +46,10 @@ body
 /* nav-area */
 .nav-area
 {
-	display: block;
+	display: flex;
+	gap: 1rem;
 	align-items: center;
+	justify-content: center;
 	width: var(--content-area-width);
 	margin: 0 auto;
 }
@@ -60,11 +64,18 @@ body
 	color: var(--txt_color);
     text-transform: uppercase;
     font-size: .75rem;
+    text-decoration: none;
+    opacity: .85;
 }
 
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.is-active,
 .nav-link:active
 {
 	color:white;
+	opacity: 1;
+	text-decoration: underline;
 }
 
 /* main-area */
@@ -76,10 +87,10 @@ body
 	width: var(--content-area-width);
 }
 
-.feed_area 
+.feed-area 
 {
 	display: block;
-	width: 400px;
+	width: 100%;
 }
 
 /* post-area */
@@ -109,6 +120,7 @@ body
 .time-label 
 {
 	font-size: .6rem;
+	color: var(--muted_txt_color);
 }
 
 .bait-label
@@ -122,6 +134,7 @@ body
 .post-area__body
 {
 	font-size: .7rem;
+	max-width: 75ch;
 }
 
 .header__time 
@@ -133,9 +146,10 @@ body
 .footer-area 
 {
 	display: block;
-	width: 400px;
+	width: var(--content-area-width);
 	margin: 0 auto;
 	border-top: .05rem gray dashed;
+	padding-top: 1rem;
 }
 
 .footer-link 
